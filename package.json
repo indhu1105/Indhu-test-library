@@ -1,0 +1,19 @@
+{
+  "name": "indhu-test",
+  "version": "0.0.1",
+  "description": "Indhu's basic test libraray",
+  "main": "indhu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indhu1105/Indhu-test-library.git"
+  },
+  "author": "Indhu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/indhu1105/Indhu-test-library/issues"
+  },
+  "homepage": "https://github.com/indhu1105/Indhu-test-library#readme"
+}
