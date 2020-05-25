@@ -14,8 +14,13 @@ const MESSAGES = {
     const alwaysPositive = () => {
         if(Math.sign(result) > 0 )
          console.log(MESSAGES.pass);
-        else
-         throw new Error(`${result} value have negative sign`);
+        else{
+            try {
+                throw new Error(`${result} value have negative sign`);
+               } catch(Error) {
+                 console.log(MESSAGES.fail +  " - " + Error);
+               }
+        }
     }
     
     const greater = (expected) => {
