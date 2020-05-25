@@ -11,11 +11,11 @@ const MESSAGES = {
     //   } else {
     //     console.log("Pass");
     //   } 
-    const alwaysPosition =(expected) => {
+    const alwaysPositive =(expected) => {
         if(Math.sign(result) === Math.sign(expected))
          console.log(MESSAGES.pass);
         else
-         throw new Error(`${result} sign not mathes the ${expected} sign`)
+         throw new Error(`${result} sign not matches the ${expected} sign`)
     }
     
     const greater = (expected) => {
@@ -46,7 +46,7 @@ const MESSAGES = {
         toBeGreaterThan: greater,
         toBeLesserThan: lesser,
         toBeEqualTo: equal,
-        toBePositive :alwaysPosition,
+        toBePositive :alwaysPositive,
     };
  }
 module.exports = { 
