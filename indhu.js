@@ -11,11 +11,11 @@ const MESSAGES = {
     //   } else {
     //     console.log("Pass");
     //   } 
-    const alwaysPositive =(expected) => {
-        if(Math.sign(result) === Math.sign(expected))
+    const alwaysPositive = () => {
+        if(Math.sign(result) > 0 )
          console.log(MESSAGES.pass);
         else
-         throw new Error(`${result} sign not matches the ${expected} sign`)
+         throw new Error(`${result} value have negative sign`);
     }
     
     const greater = (expected) => {
